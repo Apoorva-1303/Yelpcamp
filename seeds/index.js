@@ -11,7 +11,7 @@ const maptilerClient = require("@maptiler/client");
 maptilerClient.config.apiKey = process.env.MAPTILER_API_KEY;
 
 
-mongoose.connect("mongodb+srv://3apoorva13:Apoorva2006@cluster0.jiuwr.mongodb.net/Yelpcamp",{
+mongoose.connect(process.env.DB_URL,{
   useNewUrlParser: true
 })
 .then(()=>{
