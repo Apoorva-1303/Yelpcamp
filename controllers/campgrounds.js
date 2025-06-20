@@ -61,7 +61,7 @@ module.exports.editCampPost=async (req,res)=>{
   const foundCamp = await Campground.findByIdAndUpdate(
     id,
     { ...campground },
-    { new: true } // Returns the updated document
+    { new: true } 
   );
 
   const geoData = await maptilerClient.geocoding.forward(req.body.campground.location, { limit: 1 });

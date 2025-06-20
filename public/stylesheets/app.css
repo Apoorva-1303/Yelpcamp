@@ -10,7 +10,6 @@
 
 .carousel-inner {
     height: 400px;
-    /* overflow: hidden */
 }
 .carousel-item img {
     max-height: 100%;
